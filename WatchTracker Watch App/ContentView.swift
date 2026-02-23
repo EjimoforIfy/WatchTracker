@@ -55,10 +55,13 @@ struct ContentView: View {
                         ForEach(categories, id: \.self) { Text($0) }
                     }
                     
-                    Stepper("Calories: \(calories)",
+                    Stepper(
                             value: $calories,
                             in: 0...2000,
-                            step: 50)
+                            step: 50){
+                                Text("\(calories) kcal")
+                                    .font(.title2)
+                            }
                     
                     Button("Save Meal") {
                         tracker.addMeal(category: selectedCategory, calories: calories)
