@@ -1,3 +1,10 @@
+//
+//  TrackerModel.swift
+//  WatchTracker
+//
+//  Created by Ejimofor I J (FCES) on 18/02/2026.
+//
+
 import SwiftUI
 import Foundation
 import Combine
@@ -76,5 +83,4 @@ class TrackerModel {
         let timestamp: Date
     }
 }
-
 
