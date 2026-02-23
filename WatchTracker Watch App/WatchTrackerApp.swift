@@ -8,10 +8,14 @@
 import SwiftUI
 
 @main
-struct WatchTracker_Watch_AppApp: App {
+struct WaterTrackerWatchApp: App {
+    @State var tracker = TrackerModel()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(tracker: tracker)
         }
     }
 }
+
+
